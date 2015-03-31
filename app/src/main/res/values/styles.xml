@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item><!-- Customize your theme here. -->
+        <item name="android:actionMenuTextColor">@color/green</item>
+        <item name="android:actionBarTabBarStyle">@style/AppTheme.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/AppTheme.ActionBar.TabText</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TabBar" parent="android:style/Widget.Holo.Light.ActionBar.TabBar">
+        <!-- This is an blue background -->
+        <item name="android:background">@color/gris_pastel</item>
+    </style>
+
+
+    <style name="AppTheme.ActionBar.TabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+        <!-- This is a WHITE tab color -->
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#FFD900</item>
+        <item name="android:titleTextStyle">@style/MyActionBar.Text</item>
+    </style>
+
+    <style name="MyActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="yellowbackground">
+        <item name="android:background">@color/yellow</item>
+    </style>
+
+    <style name="whitebackground">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="redbackground">
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <style name="greenbackground">
+        <item name="android:background">@color/green</item>
+    </style>
+
+    <style name="blackText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="greenText">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="yellowText">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="redText">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="translucide">
+        <item name="android:background">@color/translucide</item>
+    </style>
+
+    <style name="GoButton">
+        <item name="android:background">@drawable/jaune</item>
+    </style>
+
+
+
+</resources>
+

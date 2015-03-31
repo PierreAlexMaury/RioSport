@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.google.riosport.CreateEvent">
+
+    <TextView
+        android:text="@string/create_new_event"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title" />
+    
+    <com.google.riosport.CustomAutoComplete
+        android:id="@+id/auto_complete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/choose_sport"
+        android:layout_alignParentStart="true"
+        android:hint="Copacabana..."
+        android:visibility="gone"/>
+
+    <fragment
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/auto_complete"
+        android:layout_above="@+id/next_step"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_step"
+        android:text="Next"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:calendarViewShown="false"
+        android:maxDate="2070"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_below="@+id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+    </TimePicker>
+
+<!-- informations about the event -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of event :"
+        android:textColor="@color/blue"
+        android:id="@+id/type"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public"
+            android:id="@+id/public_button"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private"
+            android:id="@+id/private_button" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration :"
+        android:textColor="@color/blue"
+        android:id="@+id/duration"
+        android:layout_below="@+id/group"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Day(s)"
+        android:textColor="@color/green"
+        android:id="@+id/day"
+        android:layout_above="@+id/day_picker"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"/>
+
+    <NumberPicker
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_picker"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hour(s)"
+        android:textColor="@color/green"
+        android:id="@+id/hour"
+        android:layout_alignTop="@+id/day"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <NumberPicker
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hour_picker"
+        android:layout_alignTop="@+id/day_picker"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minutes"
+        android:textColor="@color/green"
+        android:id="@+id/min"
+        android:layout_above="@+id/hour_picker"
+        android:layout_alignStart="@+id/min_picker"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"/>
+
+    <NumberPicker
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/min_picker"
+        android:layout_below="@+id/min"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description of the event :"
+        android:textColor="@color/blue"
+        android:id="@+id/description"
+        android:layout_below="@+id/day_picker"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Describe your event..."
+        android:textSize="12dp"
+        android:id="@+id/description_text"
+        android:layout_below="@+id/description"
+        android:layout_above="@+id/next_step"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+
+<!-- the sport to chose -->
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:id="@+id/choose_sport"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/middle_padd"
+        android:divider="@null">
+
+        </ListView>
+
+
+<!--android:checkedButton="@+id/public_button"-->
+</RelativeLayout>

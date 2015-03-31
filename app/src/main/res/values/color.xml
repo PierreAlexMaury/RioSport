@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#006633</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFD900</color>
+    <color name="gris_pastel">#EAEAEA</color>
+    <color name="red">#CC0033</color>
+    <color name="blue">#012087</color>
+    <color name="pressed_styled">#CC669900</color>
+    <color name="translucide">#00000000</color><!--8 bits car les deux dernier représente la transparence, pour les objets transparent-->
+    <color name="feed_bg">#D3D6DB</color>
+    <color name="feed_item_bg">#FFFFFF</color>
+    <color name="feed_item_border">#C2C3C8</color>
+    <color name="link">#0A80D1</color>
+    <color name="timestamp">#A0A3A7</color>
+</resources>

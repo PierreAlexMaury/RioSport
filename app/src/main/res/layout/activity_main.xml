@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.google.riosport.Main">
+
+
+    <!--<rio.riosport.customTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/fadein"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/day"
+        android:textSize="35dp"
+        android:textColor="@color/green"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />-->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/christ"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/christ" />
+
+    <com.google.riosport.customTextView
+        android:id="@+id/titleFrag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rio"
+        android:textSize="50sp"
+        android:textColor="@color/green"
+        android:layout_alignTop="@+id/titleFrag2"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp" />
+
+    <com.google.riosport.customTextView
+        android:id="@+id/titleFrag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textColor="@color/blue"
+        android:text="Sport"
+        android:layout_marginRight="22dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/small_padd"/>
+
+
+    <TextView
+        android:id="@+id/sign_in_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_status"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/middle_padd"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/imagepic"/>
+
+</RelativeLayout>

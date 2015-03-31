@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/actionBar"
+    android:gravity="center"
+    android:paddingTop="7dp"
+    android:paddingLeft="@dimen/small_padd"
+    android:paddingRight="@dimen/small_padd"
+    android:enabled="false">
+
+    <com.google.riosport.customTextView
+    android:id="@+id/titleFrag1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Rio"
+    android:textSize="30sp"
+    android:textColor="@color/green"/>
+
+    <com.google.riosport.customTextView
+    android:id="@+id/titleFrag2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="@color/blue"
+    android:text="Sport"/>
+
+</LinearLayout>
+
+

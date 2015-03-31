@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-ee576f91b45a6538d4156fc6e674b6f65034f74e.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e"/>
+    <item
+        dex="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/pre-dexed/debug/classes-59e7832b8a4bdd70462045232414a315c65b9c28.jar"
+        jar="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.11/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6"/>
+    <item
+        dex="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/pre-dexed/debug/classes-97714b84d180f0c60dc7f6bf48296fe8babccc2b.jar"
+        jar="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6"/>
+    <item
+        dex="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-1d569c109fc9d4898b3e51bdd340d929f475251b.jar"
+        jar="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0"/>
+    <item
+        dex="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies-8e3b5353797d24f653d1e661d35858f2244be9d5.jar"
+        jar="/Users/pierre-alexandremaury/Desktop/RioSport+/app/libs/ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="f8ddd5d69d8cdc994cde9af278ff79b06365eee3"/>
+    <item
+        dex="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/pre-dexed/debug/classes-9b7c9ef55ca2e81608ca00c97089513a68dda476.jar"
+        jar="/Users/pierre-alexandremaury/Desktop/RioSport+/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.0.1"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136"/>
+
+</pre-dex-items>
